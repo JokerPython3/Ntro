@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body, html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a0a;
+  color: #f0f0f0;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.header .name {
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.header .role {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+.languages {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 800px;
+}
+.languages h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.languages h2::after {
+  content: '';
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(to right, #ff0047, #00d2ff);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
+
+.grid-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 2rem;
+}
+
+.icon-card {
+  background: linear-gradient(145deg, #1a1a1a, #0f0f0f);
+  border-radius: 16px;
+  padding: 2rem 1rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.7), -5px -5px 15px rgba(40,40,40,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.icon-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 8px 8px 20px rgba(0,0,0,0.7), -8px -8px 20px rgba(40,40,40,0.2);
+}
+.icon-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+.icon-card span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  color: #999;
+}
